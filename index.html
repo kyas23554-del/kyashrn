@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+</head>
+
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - my homepage Bootstrap Template</title>
+     
+
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+        
+
+
+<audio loop id="bgm">
+  <div class="sound-control">
+     audio.volume
+    <label for="volumeSlider">
+      <span style="font-size:1.2rem;">🔊</span> 볼륨
+    </label>
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0">
+    <span class="volume-value" id="volumeDisplay">30%</span>
+    <button id="toggleMuteBtn">🔇 음소거</button>
+  </div>
+    <source src="assets/img/배경음악/lemonmusiclab-inspiring-background-music-516338.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', function() {
+    const audio = document.getElementById('bgm');
+    if (audio.paused) {
+        audio.play();
+    }
+}, { once: true });
+</script>
+
+
+<!-- <audio loop id="bgm">
+    <source src="assets/img/portfolio/alanajordan-the-beauty-of-dreams-461450.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener('click', function() {
+    const audio = document.getElementById('bgm');
+    if (audio.paused) {
+        audio.play();
+    }
+}, { once: true });
+</script>
+ -->
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">my homepage</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+    
+      <img src="assets/img/배경화면/kaboompics-blank-792125_1920.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+        <h2>홈페이지 방문을 환영합니다.</h2>
+        <p><span class="typed" data-typed-items="해운대, 동백섬, 바닷가, 오륙도"></span></p>
+      </div>
+
+    </section><!-- /Hero Section --><br><br>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/2.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>해운대바닷가</span></p>
+                <p><strong>Profile: </strong> <span>힐링의 장소</span></p>
+                <p><strong>homepage: </strong> <span>https://www.haeundae.go.kr</span></p>
+                <p><strong>Phone: </strong> <span>(051)749-4000</span></p>
+              </div>
+            </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress"> 
+  <span class="skill"><span>HTML</span> <i class="val">100%</i></span> 
+  <div class="progress-bar-wrap"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="background-color: #007bff; width: 100%;"></div> 
+  </div> 
+              </div><!-- End Skills Item -->
+
+              <div class="progress"> 
+  <span class="skill"><span>영 상</span> <i class="val">90%</i></span> 
+  <div class="progress-bar-wrap"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="background-color: #bd154d; width: 100%;"></div> 
+  </div> 
+              </div><!-- End Skills Item -->
+
+             <div class="progress"> 
+  <span class="skill"><span>일러스트</span> <i class="val">75</i></span> 
+  <div class="progress-bar-wrap"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75" style="background-color: #06a844eb; width: 100%;"></div> 
+  </div> 
+              </div><!-- End Skills Item -->
+
+              <div class="progress"> 
+  <span class="skill"><span>포토샵</span> <i class="val">50%</i></span> 
+  <div class="progress-bar-wrap"> 
+    <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="50" style="background-color: #efe815; width: 100%;"></div> 
+  </div> 
+              </div><!-- End Skills Item -->
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>해운대바닷가</h4> 
+              
+             
+              
+               <p class="fs-large fw-normal">
+                규격:  백사장 길이 1.5km, 넓이 120,000㎡<br>
+                 수심이 얕고 조수 변화가 적음<br>
+                이름 유래:  신라 시대 학자 최치원이 <br>
+                바위에 '해운'이라는 호를 새긴 데서 유래<br>
+                주변 경관:  서쪽의 동백섬과 마린시티<br>
+                 동쪽의 달맞이 고개가 어우러짐<br>
+              </p>
+              
+              
+              <p>
+                축제:  매년 봄·여름 사이 모래조각<br>
+                 작품을 선보이는 모래축제 개최<br>
+                야경:  동백섬과 마린시티, 더베이101에서 <br>
+                바라보는 화려한 도심 야경<br>
+                편의시설:   구남로 문화광장, 해운대 전통시장,<br>
+                 특급 호텔과 리조트 인접해운대해수욕장의 근처 맛집, <br>
+                주차 정보, 또는 숙박 추천 중 어떤 추가
+               
+              </p>
+              
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Resume Section -->
+  
+    <section id="해운대 소개" class="해운대 section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>해운대소개</h1> <br><br>
+        <p>                   </p>
+      </div><!-- End Section Title -->
+
+
+      <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해운대 명소 안내</title>
+    <style>
+        /* 기본 스타일 초기화 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Malgun Gothic', dotum, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 50px 0;
+        }
+
+        /* 전체 콘텐츠를 중앙에 고정 (치우침 방지) */
+        .container {
+            max-width: 1200px; /* 전체 가로 너비 */
+            margin: 0 auto;    /* 좌우 여백을 똑같이 주어 정중앙 정렬 */
+            padding: 0 20px;
+        }
+
+        /* 그리드 레이아웃: 좌측 1세트, 우측 1세트 나란히 배치 */
+        .grid-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 50%씩 반반 나눔 */
+            gap: 40px; /* 좌측 세트와 우측 세트 사이의 간격 */
+            margin-bottom: 40px;
+        }
+
+        /* 각 아이템 세트 내부 정렬 (이미지 - 텍스트) */
+        .item-set {
+            display: flex;
+            align-items: flex-start; /* 이미지와 텍스트 상단 기준 정렬 */
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        /* 이미지 링크 스타일 */
+        .img-link {
+            flex-shrink: 0;
+            width: 180px; /* 이미지 가로 크기 고정 */
+            height: 140px; /* 이미지 세로 크기 고정 */
+            overflow: hidden;
+            border-radius: 6px;
+            display: block;
+            position: relative;
+        }
+
+        /* 이미지 기본 상태 및 마우스 오버 효과 */
+        .img-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 비율 유지하며 꽉 채움 */
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        /* 💡 이미지에 마우스 올렸을 때 효과 */
+        .img-link:hover img {
+            transform: scale(1.05); /* 살짝 확대되는 효과 */
+            opacity: 0.85;          /* 살짝 흐려지며 클릭 가능한 느낌 전달 */
+        }
+
+        /* 설명 텍스트 영역 (이미지 바로 오른쪽) */
+        .description {
+            margin-left: 20px; /* 이미지와의 간격 */
+            flex-grow: 1;
+        }
+
+        .description h3 {
+            font-size: 18px;
+            color: #111;
+            margin-bottom: 8px;
+        }
+
+        .description p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* 반응형: 화면이 너무 작아지면 한 줄로 정렬 */
+        @media (max-width: 768px) {
+            .grid-wrapper {
+                grid-template-columns: 1fr;
+            }
+            .item-set {
+                flex-direction: column;
+            }
+            .img-link {
+                width: 100%;
+                height: 200px;
+            }
+            .description {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 첫 번째 줄 (왼쪽: 누리마루 / 오른쪽: 조선비치호텔) -->
+    <div class="grid-wrapper">
+        
+        <!-- [왼쪽 세트] 누리마루 -->
+        <div class="item-set">
+            <!-- 이미지 마우스 오버 시 링크 이동 -->
+             <a href="#" class="stretched-link">
+                <!-- 💡 '이미지주소' 부분에 실제 사진 파일 경로를 넣으시면 됩니다 -->
+                <img src="assets/img/해운대소개/누리마루.png" alt="누리마루">
+            </a>
+            <div class="description">
+                <h3>누리마루 APEC하우스</h3>
+                <p>2005년 제13차 APEC 정상회의를 위해 건립된 국제회의장입니다. 한국 전통 정자를 현대적 감각으로 재해석한 건축물로 주변 바다 경관이 뛰어납니다.</p>
+            </div>
+        </div>
+
+        <!-- [오른쪽 세트] 조선비치호텔 -->
+        <div class="item-set">
+             <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/조선비치호텔.png" alt="조선비치호텔">
+            </a>
+            <div class="description">
+                <h3>웨스틴 조선 부산</h3>
+                <p>부산 해운대와 동백섬 입구에 위치한 5성급 호텔입니다. 해운대 바다와 광안대교를 조망하는 뛰어난 전망과 동백섬 산책로가 연결되어 있습니다.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 두 번째 줄 (왼쪽: 더베이101 / 오른쪽: 제니스아파트) -->
+    <div class="grid-wrapper">
+
+        <!-- [왼쪽 세트] 더베이101 -->
+        <div class="item-set">
+             <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/더베이101.png" alt="더베이101">
+            </a>
+            <div class="description">
+                <h3>더베이101</h3>
+                <p>화려한 마린시티 고층 빌딩 숲의 야경과 바다를 함께 즐길 수 있는 복합 문화 공간입니다. 야외 테라스에서 즐기는 야경으로 유명합니다.</p>
+            </div>
+        </div>
+
+        <!-- [오른쪽 세트] 제니스아파트 -->
+        <div class="item-set">
+            <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/제니스아파트.png" alt="제니스아파트">
+            </a>
+            <div class="description">
+                <h3>해운대 두산위브 더 제니스</h3>
+                <p>마린시티에 위치한 최고 80층 규모의 초고층 주상복합 아파트입니다. 파도를 형상화한 유려한 곡선 디자인으로 부산의 대표 랜드마크입니다.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+<div class="container">
+
+    <!-- 첫 번째 줄 (왼쪽: 누리마루 / 오른쪽: 조선비치호텔) -->
+    <div class="grid-wrapper">
+        
+        <!-- [왼쪽 세트] 누리마루 -->
+        <div class="item-set">
+            <!-- 이미지 마우스 오버 시 링크 이동 -->
+             <a href="#" class="stretched-link">
+                <!-- 💡 '이미지주소' 부분에 실제 사진 파일 경로를 넣으시면 됩니다 -->
+                <img src="assets/img/해운대소개/누리마루데크길야경.png" alt="누리마루데크길야경">
+            </a>
+            <div class="description">
+                <h3>누리마루데크길야경</h3>
+                <p>해운대 바닷가의 데크길.  저녁이 되면 야경과 데크길의 경관이 뛰어납니다.</p>
+            </div>
+        </div>
+
+        <!-- [오른쪽 세트] 조선비치호텔 -->
+        <div class="item-set">
+             <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/누리마루야경.png" alt="누리마루야경">
+            </a>
+            <div class="description">
+                <h3>누리마루야경</h3>
+                <p>부산 해운대와 동백섬 입구에 위치한 5성급 호텔입니다. 해운대 바다와 광안대교를 조망하는 뛰어난 전망과 동백섬 산책로가 연결되어 있습니다.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- 두 번째 줄 (왼쪽: 더베이101 / 오른쪽: 제니스아파트) -->
+    <div class="grid-wrapper">
+
+        <!-- [왼쪽 세트] 더베이101 -->
+        <div class="item-set">
+             <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/엘시티야경.png" alt="엘시티야경">
+            </a>
+            <div class="description">
+                <h3>엘시티야경</h3>
+                <p>화려한 마린시티 고층 빌딩 숲의 야경과 바다를 함께 즐길 수 있는 복합 문화 공간입니다. 야외 테라스에서 즐기는 야경으로 유명합니다.</p>
+            </div>
+        </div>
+
+        <!-- [오른쪽 세트] 제니스아파트 -->
+        <div class="item-set">
+            <a href="#" class="stretched-link">
+                <img src="assets/img/해운대소개/제니스야경.png" alt="제니스야경">
+            </a>
+            <div class="description">
+                <h3>제니스야경</h3>
+                <p>마린시티에 위치한 최고 80층 규모의 초고층 주상복합 아파트입니다. 저녁에 제니스아파트의 불빛이 아름답습니다.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+
+    </section><!-- /Resume Section -->
+
+
+
+    <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+  </div><!-- End Section Title -->
+
+  <style>
+    .image-container {
+      display: flex;               /* 플렉스 박스 사용 */
+      justify-content: center;     /* 가로 가운데 정렬 */
+      align-items: center;         /* 세로 가운데 정렬 */
+      flex-wrap: wrap;             /* 공간이 부족하면 아래 줄로 이동 */
+      gap: 20px;                   /* 이미지 사이의 간격 */
+      padding: 40px 20px;          /* 부모 박스의 위아래, 양옆 여백 */
+      max-width: 1200px;           /* 중앙 정렬을 위한 최대 가로폭 제한 */
+      margin: 0 auto;              /* 화면 중앙에 배치 */
+    }
+
+    /* [기본 PC 화면] 한 줄에 4개 배치 */
+    .image-container a {
+      flex: 0 1 calc(25% - 15px);  
+      box-sizing: border-box;
+      position: relative;          /* stretched-link 기준점 */
+    }
+
+    .image-container img {
+      width: 100%;                 /* 감싸고 있는 a 태그 크기에 맞춤 */
+      height: auto;                /* 이미지 비율 유지 */
+      display: block;
+      border-radius: 8px;          /* (선택 사항) 이미지를 부드럽게 만들기 위한 둥근 모서리 */
+    }
+
+    /* [태블릿 화면] 화면 폭이 992px 이하일 때: 한 줄에 2개씩 배치 */
+    @media (max-width: 992px) {
+      .image-container a {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+
+    /* [모바일 화면] 화면 폭이 576px 이하일 때: 한 줄에 1개씩 세로로 배치 */
+    @media (max-width: 576px) {
+      .image-container a {
+        flex: 0 1 100%;
+        max-width: 400px;          /* 모바일에서 이미지가 너무 거대해지는 것을 방지 */
+      }
+    }
+  </style>
+
+  <div class="image-container">
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/괭이눈.png" alt="괭이눈">
+    </a>  
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/너도바람꽃.png" alt="너도바람꽃">
+    </a>   
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/노루귀.png" alt="노루귀">
+    </a>   
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/변산바람꽃.png" alt="변산바람꽃">
+    </a>  
+
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/복수초.png" alt="복수초">
+    </a>  
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/진퍼리꽃나무.png" alt="진퍼리꽃나무">
+    </a>  
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/큰개불알꽃.png" alt="큰개불알꽃">
+    </a>  
+    <a href="#" class="stretched-link">
+      <img src="assets/img/야생화/프리지어.png" alt="프리지어">
+    </a>  
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section accent-background">
+
+      <img src="assets/img/해운대대표이미지.png" alt="" data-aos="fade-in">
+
+      
+            
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end data-purecounter-duration="0" class="purecounter"></span>
+              <p>Awards</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h1>Portfolio</h1>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-3dmax">3dmax</li>
+            <li data-filter=".filter-영상">영상</li>
+            <li data-filter=".filter-일러스트">일러스트</li>
+            <li data-filter=".filter-포토샵">포토샵</li><br><br><br><br><br><br>
+          </ul><!-- End Portfolio Filters -->
+    
+   <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+       <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/표지.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/표지.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/목차.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/목차.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/평면도.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/평면도.jpg  " title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+d
+           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/a  view.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/a  view.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/b view.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/b view.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+ 
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/c view.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/c view.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-3dmax">
+              <img src="assets/img/portfolio/3d맥스/d view.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              <a href="assets/img/portfolio/3d맥스/d view.jpg" title  data-gallery="portfolio-gallery-3dmax" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-영상"> 
+              <img src="assets/img/portfolio/영상/나만의 제품광고영상이미지.png" class="img-fluid" alt=""> 
+           <div class="portfolio-info"> 
+             <h4>나만의 제품광고영상</h4> 
+            <a href="assets/img/portfolio/영상/나만의 제품광고영상이미지.png" title  data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+            <a href="assets/img/portfolio/영상/권영애-나만의 제품공고영상.mp4" title   data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+          </div> 
+         </div><!-- End Portfolio Item -->  
+
+ 
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-영상"> 
+              <img src="assets/img/portfolio/영상/음식이야기.png" class="img-fluid" alt=""> 
+           <div class="portfolio-info"> 
+             <h4>음식이야기</h4> 
+            <a href="assets/img/portfolio/영상/음식이야기.png" title  data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+            <a href="assets/img/portfolio/영상/권영애-음식이야기1.mp4" title  data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+          </div> 
+         </div><!-- End Portfolio Item -->   
+
+     
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-영상"> 
+              <img src="assets/img/portfolio/영상/최종프로젝트.png" class="img-fluid" alt=""> 
+           <div class="portfolio-info"> 
+             <h4>최종프로젝트</h4> 
+            <a href="assets/img/portfolio/영상/최종프로젝트.png" title="영 상1" data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+            <a href="assets/img/portfolio/영상/권영애-최종프로잭트.mp4" title="영 상1" data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+          </div> 
+         </div><!-- End Portfolio Item -->
+
+          <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-영상"> 
+              <img src="assets/img/portfolio/영상/커피이야기.png" class="img-fluid" alt=""> 
+           <div class="portfolio-info"> 
+             <h4>커피이야기</h4> 
+            <a href="assets/img/portfolio/영상/커피이야기.png" title   data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+            <a href="assets/img/portfolio/영상/권영애-커피이야기.mp4" title  data-gallery="portfolio-gallery-영상" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> 
+          </div> 
+         </div><!-- End Portfolio Item -->
+
+         
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-포토샵">
+              <img src="assets/img/portfolio/포토샵/북커버-01.JPG" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>포토샵</h4>
+              <a href="assets/img/portfolio/포토샵/북커버-01.JPG" title="포토샵/북커버-01.jpg" title   data-gallery="portfolio-gallery-포토샵" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>  
+              </div><!-- End Portfolio Item -->
+ 
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-포토샵">
+              <img src="assets/img/portfolio/포토샵/보라색박스2.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/포토샵/보라색박스2.png" title   data-gallery="portfolio-gallery-포토샵" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-포토샵">
+              <img src="assets/img/portfolio/포토샵/장미꽃축제-3 v02.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/포토샵/장미꽃축제-3 v02.jpg" title   data-gallery="portfolio-gallery-포토샵" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-포토샵">
+              <img src="assets/img/portfolio/포토샵/권영애-리플렛.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/포토샵/권영애-리플렛.jpg" title   data-gallery="portfolio-gallery-포토샵" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-포토샵">
+              <img src="assets/img/portfolio/포토샵/펼친박스모양.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/포토샵/펼친박스모양.png" title   data-gallery="portfolio-gallery-포토샵" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-일러스트">
+              <img src="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-01.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-01.png" title   data-gallery="portfolio-gallery-일러스트" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-일러스트">
+              <img src="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-02.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-02.png" title   data-gallery="portfolio-gallery-일러스트" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-일러스트">
+              <img src="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-03.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/일러스트/캐릭터포토폴리오-권영애-1-03.png" title   data-gallery="portfolio-gallery-일러스트
+               " class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-일러스트">
+              <img src="assets/img/portfolio/일러스트/콩까페 포토플리오.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+               <a href="assets/img/portfolio/일러스트/콩까페 포토플리오.jpg" title  data-gallery="portfolio-gallery-일러스트" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+          </div><!-- End Portfolio Container -->
+ 
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+   
+    <!-- Faq Section -->
+    <section id="faq" class="faq section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="content px-xl-5">
+              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="faq-container">
+              <div class="faq-item faq-active">
+                <h3><span class="num">1.</span> <span>Non consectetur a erat nam at lectus urna duis?</span></h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">2.</span> <span>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">3.</span> <span>Dolor sit amet consectetur adipiscing elit pellentesque?</span></h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">4.</span> <span>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</span></h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span class="num">5.</span> <span>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span></h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Faq Section -->
+
+    <!-- Testimonials Section -->
+
+
+    
+    <section id="testimonials" class="testimonials section accent-background">
+
+      <img src="assets/img/배경.png" class="testimonials-bg" alt="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/테스트모니얼/동백꽃.png" class="testimonial-img" alt="">
+                <h3>동백꽃</h3>
+                <h4>동백섬에 있는~~</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/테스트모니얼/동백섬.png" class="testimonial-img" alt="">
+                <h3>동백섬</h3>
+                <h4>야경이미지</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+              
+                <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/테스트모니얼/비둘기.png" class="testimonial-img" alt="">
+                <h3>비둘기</h3>
+                <h4>바다를 날다.</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/테스트모니얼/야경.png" class="testimonial-img" alt="">
+                <h3>야경</h3>
+                <h4>마린시티의 밤</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+ 
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/테스트모니얼/해운대바닷가.png" class="testimonial-img" alt="">
+                <h3>해운대바닷가</h3>
+                <h4>세계에서제일좋은바다.^^</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="info-wrap" data-aos="fade-up" data-aos-delay="200">
+          <div class="row gy-5">
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-lg-4">
+              <div class="info-item d-flex align-items-center">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="300">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+
+              <button type="submit">Send Message</button>
+            </div>
+
+          </div>
+        </form><!-- End Contact Form -->
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer accent-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>여러 영상 클릭 재생</title>
+</head>
+<body>
+    <div class="video-list">
+        <video class="video-item" width="100%" controls>
+            <source src="assets/img/portfolio/영상/권영애-나만의 제품공고영상.mp4" type="video/mp4">
+        </video>
+        <video class="video-item" width="100%" controls>
+            <source src="assets/img/portfolio/영상/권영애-음식이야기1.mp4" type="video/mp4">
+        </video>
+        <video class="video-item" width="100%" controls>
+            <source src="assets/img/portfolio/영상/권영애-최종프로잭트.mp4" type="video/mp4">
+        </video>
+        <video class="video-item" width="100%" controls>
+            <source src="assets/img/portfolio/영상/권영애-커피이야기.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        // 모든 비디오에 클릭 이벤트 추가
+        const videos = document.querySelectorAll('.video-item');
+        
+        videos.forEach(video => {
+            video.addEventListener('click', function() {
+                // 다른 모든 비디오 일시정지
+                videos.forEach(other => {
+                    if (other !== this && !other.paused) {
+                        other.pause();
+                    }
+                });
+                
+                // 현재 비디오 재생/일시정지 토글
+                if (this.paused) {
+                    this.play();
+                } else {
+                    this.pause();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
